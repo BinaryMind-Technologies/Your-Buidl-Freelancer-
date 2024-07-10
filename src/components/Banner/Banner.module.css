@@ -1,14 +1,21 @@
-.banner__cont {
+.main_Cont_Banner {
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(99.87deg, #0f1222 26.62%, rgba(0, 0, 0, 0) 93.5%),
     linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  height: 170px;
   border-radius: 8px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+.btns_cont {
+  padding: 0 0 60px 60px;
+}
+.banner__cont {
+  height: 170px;
   display: flex;
-  padding: 0 60px;
   justify-content: space-between;
   align-items: center;
+  padding: 0 60px;
 }
 .banner__cont h1 {
   width: 362px;

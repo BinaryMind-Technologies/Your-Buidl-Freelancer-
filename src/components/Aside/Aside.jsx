@@ -16,12 +16,7 @@ import DoubleButton from "./DoubleButton";
 function Aside() {
   const pathName = usePathname();
 
-  let show1;
-  pathName === "/rewards" ? (show1 = true) : "";
-  pathName === "/projects" ? (show1 = true) : "";
-  let show2 =
-    +pathName.split("/").slice(-1) % 2 === 0 && pathName.includes("/rewards");
-  console.log(show1, show2, pathName);
+  
 
   const Links = [
     {
@@ -95,11 +90,11 @@ function Aside() {
               </li>
             );
           })}
-          {(show1 || show2) && (
+        
             <li>
               <DoubleButton />
             </li>
-          )}
+          
         </ul>
       </div>
       <div>
