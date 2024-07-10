@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Button from "../Button/Button";
 function Banner({ text, image, heightImage, widthImage }) {
   const pathName = usePathname();
-  /***if this image have special width or height */
+  /***if this image have special width or height ***/
   const style = widthImage &&
     heightImage && {
       width: widthImage + "px",
